@@ -8,11 +8,15 @@ public class AlexCalculator {
     }
 
     private static int multiply(int a, int b) {
-        int result = 0;
-        for (int i = 0; i < b; i++) {
-            result = result + a;
+        System.out.println("Testing Multiplication ");
+        int sum = 0;
+        for (int i = 1; i < b; i++) {
+
+            System.out.println("Adding integers: " + (sum += a) + "  " + a);
         }
-        return result;
+        sum = sum + a;
+        System.out.println("Product: " + sum);
+        return sum;
     }
 
     public static void main(String[] args) {
@@ -24,7 +28,8 @@ public class AlexCalculator {
         System.out.println("Testing Addition :");
         System.out.println("Adding Integers : " + a + b);
         System.out.println("Sum: " + add(a, b));
-        System.out.println("The result is : " + multiply(a, b));
+        System.out.println("Testing Multiplication :");
+        multiply(a, b);
 
     }
 }
