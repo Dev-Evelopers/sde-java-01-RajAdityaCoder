@@ -44,6 +44,7 @@ class Film implements IFilm {
         return title + " (" + director + ", " + year + ")";
     }
 }
+// FilmLibrary interface
 
 interface IFilmLibrary {
 
