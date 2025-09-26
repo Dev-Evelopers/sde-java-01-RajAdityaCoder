@@ -42,6 +42,6 @@ public class FoldingRectangle {
         // Calculate the minimum number of folds required
         int result = minFolds(h, w, h1, w1);
         System.out.println("Minimum number of folds required : " + result);
-
+        sc.close();
     }
 }
