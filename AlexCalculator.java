@@ -8,7 +8,7 @@ public class AlexCalculator {
     }
 
     private static int multiply(int a, int b) {
-        System.out.println("Testing Multiplication ");
+        System.out.println("Testing Multiplication : ");
         int sum = 0;
         for (int i = 1; i < b; i++) {
 
@@ -26,10 +26,8 @@ public class AlexCalculator {
         System.out.print("Enter second number : ");
         int b = sc.nextInt();
         System.out.println("Testing Addition :");
-        System.out.println("Adding Integers : " + a + b);
+        System.out.println("Adding Integers : " + a + " " + b);
         System.out.println("Sum: " + add(a, b));
-        System.out.println("Testing Multiplication :");
         multiply(a, b);
-
     }
 }
